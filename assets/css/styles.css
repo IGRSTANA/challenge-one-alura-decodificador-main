@@ -10,6 +10,7 @@
 
 body{
 background-color: #dddddd;
+
 }
 
 
@@ -53,8 +54,8 @@ background-color: #dddddd;
     border-color: rgb(1, 3, 5);
     border-width: 10px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 40;
+    font-size: 20px;
     line-height: 150%;
     color: var(--dark-blue-400);
     width: 400px;
@@ -62,17 +63,17 @@ background-color: #dddddd;
     overflow-wrap: break-word;  
     word-wrap: break-word; 
     word-break: break-word;
-    background-color: rgb(52, 52, 155);
+    background-color: rgb(109, 109, 201);
 
 }
 
 .texto {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 30px;
     line-height: 150%;
     text-align: center;
-    padding: 0;
+    padding: 10px;
     color: var(--dark-blue-400);
     background: none;
     border: none;
@@ -113,7 +114,7 @@ background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
     color: var(--white);
-    background-color: rgb(36, 30, 119);
+    background-color: rgb(109, 109, 201);
 
 }
 
@@ -138,7 +139,7 @@ background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
     color: var(--white);
-    background-color: rgb(36, 30, 119);
+    background-color:  rgb(109, 109, 201);
     color:  var(--dark-blue-400);
     border-radius: 5px;
 }
