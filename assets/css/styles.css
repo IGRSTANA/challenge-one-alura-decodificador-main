@@ -1,0 +1,314 @@
+/*Paleta de Cores*/
+
+
+/*Header*/
+
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--light-blue-200);
+}
+
+body{
+background-color: #dddddd;
+}
+
+
+
+
+.principal-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+}
+
+.principal {
+    display: grid;
+    grid-template-areas: 
+    "textarea retangulo"
+    "criptografar descriptografar"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    margin: 1em;
+    background-color: rgb(217, 228, 228);
+}
+
+.container-texto {
+    grid-area: textarea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0;
+    box-shadow: 1px 1px 1px 1px var(--gray-100);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(1, 3, 5);
+    border-width: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    color: var(--dark-blue-400);
+    width: 400px;
+    height: 200px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    background-color: rgb(52, 52, 155);
+
+}
+
+.texto {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: center;
+    padding: 0;
+    color: var(--dark-blue-400);
+    background: none;
+    border: none;
+    resize: none;
+    
+}
+
+.texto:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--dark-blue-400);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: var(--dark-blue-400);  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--dark-blue-400);  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: var(--dark-blue-400);  
+ }
+
+ .criptografar {  
+    grid-area: criptografar;
+    background: var(--dark-blue-400);
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    color: var(--white);
+    background-color: rgb(36, 30, 119);
+
+}
+
+.criptografar:hover {
+    background: var(--light-blue-200);
+    font-weight: bold;
+    color: var(--dark-blue-400);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px var(--gray-200);
+}
+
+.descriptografar {
+    grid-area: descriptografar;
+    background: var(--gray-100);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    color: var(--white);
+    background-color: rgb(36, 30, 119);
+    color:  var(--dark-blue-400);
+    border-radius: 5px;
+}
+
+.descriptografar:hover {
+    background: var(--gray-400);
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 2px var(--gray-200);
+}
+
+.container-retangulo {
+    grid-area: retangulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    width: 400px;
+    height: 200px;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--dark-blue-400);
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+#container-mensagem-erro {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3px;
+}
+
+.imagem-menino { 
+    width: 120px;
+    height: auto;
+    align-self: end;
+}
+
+.container-paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 2px;
+    width: 300px;
+    height: 70px;
+}
+
+.paragrafo1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-500);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.paragrafo2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-400);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.container-mensagem-validacao {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 1%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    line-height: 150%;
+    color: var(--gray-400);
+    opacity: 0.8;
+}
+
+/*Footer*/
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to bottom, var(--light-blue-200), var(--gray-100));
+}
+
+.paragrafo-rodape {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--gray-400);
+    font-size: 1.3rem;
+}
+
+.link-rodape {
+    text-decoration: none;
+    color: var(--dark-blue-400);
+    font-weight: bold;
+}
+
+.link-rodape:hover {
+    color: var(--light-blue-400);
+    transition: 200ms all ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .principal {
+        grid-template-areas: 
+        "textarea"
+        "criptografar"
+        "retangulo"
+        "descriptografar"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .container-texto {
+        width: 300px;
+        height: 300px;
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+
+    .container-retangulo {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .imagem-menino {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-paragrafo {
+        width: 200px;
+        height: 100px;
+    }
+
+    .container-mensagem-validacao {
+        font-family: 0.7rem;
+        margin: 1em 4em;
+    }
+   
+    .descriptografar {
+        margin: 2em;
+    }
+}
